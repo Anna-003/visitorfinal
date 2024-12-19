@@ -11,19 +11,19 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class MainActivity extends AppCompatActivity {
-    Button b1;
+public class Add extends AppCompatActivity {
+    Button b5;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_main);
-        b1 = (Button) findViewById(R.id.add);
-        b1.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.activity_add);
+        b5=(Button)findViewById(R.id.menu);
+        b5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent ab = new Intent(getApplicationContext(), Add.class);
-                startActivity(ab);
+                Intent as=new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(as);
             }
         });
 
